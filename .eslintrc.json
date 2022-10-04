@@ -1,0 +1,15 @@
+{
+    "plugins": [
+        "testing-library",
+        "jest-dom"
+    ],
+    "extends": [
+        "plugin:testing-library/react",
+        "plugin:jest-dom/recommended"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2020
+    }
+}
