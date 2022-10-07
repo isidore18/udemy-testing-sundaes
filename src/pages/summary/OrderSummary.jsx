@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function summary() {
-  return <div>summary</div>;
+export default function OrderSummary() {
+  return <div>OrderSummary</div>;
 }

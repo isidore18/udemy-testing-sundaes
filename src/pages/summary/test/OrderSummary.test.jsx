@@ -1,4 +1,7 @@
-import { render, screen, fireEvent } from "@testing-library/react";
-import App from "../../../App";
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import SummaryForm from "../SummaryForm";
 
-test("app works", () => {});
+test("initial conditions", () => {
+  render(<SummaryForm />);
+});
