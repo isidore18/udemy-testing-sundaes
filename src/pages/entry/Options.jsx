@@ -3,9 +3,11 @@ import ScoopOption from "./ScoopOption";
 import ToppingOption from "./ToppingOption";
 import Row from "react-bootstrap/Row";
 import axios from "axios";
+import AlertBanner from "../common/AlertBanner";
 
-export default function Options({ optionType, toppingOption }) {
+export default function Options({ optionType }) {
   const [items, setItems] = useState([]);
+  const [error, setError] = useState(false);
 
   // optionType is scoops or toppings
 
@@ -15,21 +17,20 @@ export default function Options({ optionType, toppingOption }) {
       .then((res) => {
         setItems(res.data);
       })
-      .catch((err) => {
+      .catch((error) => {
         // TODO handle error
+        setError(true);
       });
   }, [optionType]);
 
-  useEffect(() => {
-    axios
-      .get(`http://localhost:3030/${toppingOption}`)
-      .then((res) => {
-        setItems(res.data);
-      })
-      .catch((err) => {
-        // todo handle error
-      });
-  }, [toppingOption]);
+  if (error) {
+    return (
+      <AlertBanner
+      // variant="danger"
+      // message="An unexpected error occured. Please try again later."
+      />
+    );
+  }
 
   // @ts-ignore
   const ItemComponent = optionType === "scoops" ? ScoopOption : ToppingOption;
