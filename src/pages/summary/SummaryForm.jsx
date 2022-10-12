@@ -8,7 +8,7 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 //
 // );
 
-export default function OrderSummary() {
+export default function SummaryForm() {
   const [tcchecked, setTcChecked] = useState(false);
 
   const popover = (
