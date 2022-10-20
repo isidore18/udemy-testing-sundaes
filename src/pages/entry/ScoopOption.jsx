@@ -1,7 +1,7 @@
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
-import { useOrderDetails } from "../../context/OrderDetails";
+import { useOrderDetails } from "../../contexts/OrderDetails";
 
 export default function ScoopOptions({ name, imagePath }) {
   const { updateItemCount } = useOrderDetails();

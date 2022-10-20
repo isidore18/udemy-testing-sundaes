@@ -1,5 +1,5 @@
 import Options from "./Options";
-import { useOrderDetails } from "../../context/OrderDetails";
+import { useOrderDetails } from "../../contexts/OrderDetails";
 import { formatCurrency } from "../../utilities";
 import Button from "react-bootstrap/Button";
 

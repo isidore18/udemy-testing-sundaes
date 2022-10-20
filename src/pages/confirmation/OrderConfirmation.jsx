@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "react-bootstrap";
-import { useOrderDetails } from "../../context/OrderDetails";
+import { useOrderDetails } from "../../contexts/OrderDetails";
 import axios from "axios";
 
 export default function OrderConfirmation({ setOrderPhase }) {

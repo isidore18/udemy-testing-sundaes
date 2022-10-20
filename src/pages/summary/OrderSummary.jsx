@@ -1,6 +1,6 @@
 import React from "react";
 import SummaryForm from "./SummaryForm";
-import { useOrderDetails } from "../../context/OrderDetails";
+import { useOrderDetails } from "../../contexts/OrderDetails";
 import { formatCurrency } from "../../utilities";
 
 export default function OrderSummary({ setOrderPhase }) {
