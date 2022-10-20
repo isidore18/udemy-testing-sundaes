@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { OrderDetailsProvider } from "../../../context/OrderDetails";
+import { OrderDetailsProvider } from "../../../contexts/OrderDetails";
 import Options from "../Options";
 import OrderSummary from "../../summary/OrderSummary";
 import OrderEntry from "../OrderEntry";

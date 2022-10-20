@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { Container } from "react-bootstrap";
-import { OrderDetailsProvider } from "./context/OrderDetails";
+import { OrderDetailsProvider } from "./contexts/OrderDetails";
 
 import OrderEntry from './pages/entry/OrderEntry';
 import OrderSummary from './pages/summary/OrderSummary';
